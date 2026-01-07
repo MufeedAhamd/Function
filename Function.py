@@ -101,7 +101,20 @@ def fact(n):
     else:
         return n* fact(n-1)
 
+
+#  Overlap
+def overlap(list1, list2):
+    
+     # Convert lists to sets to remove duplicates, then find intersection
+    return list(set(list1) & set(list2))
+
+
+a = [1, 2, 2, 3, 4]
+b = [2, 3, 5, 6]
+print(find_overlap(a, b))  # Output: [2, 3]
+
 n = int(input("Enter the Number :"))
 for i in range (1 , n+1):
    x=fact(i)
+
    print(x , end=' ')
